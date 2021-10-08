@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+li {
+  list-style-type: none;
+}
+#nav {
+  background-image: url(https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/background_pattern.png);
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  display: block;
+}
+
+#img_logo {
+  float: left;
+  position: relative;
+}
+ul section {
+  float: right;
+  position: relative;
+  margin: 0.5rem;
+}
+#home,
+#company,
+#portfolio,
+#products,
+#blog {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  position: relative;
+  padding-left: 1rem;
+}
+hr {
+  border: none;
+  margin: -0.5rem 1rem 0.5rem;
+}
+#company hr {
+  height: 5px;
+  background-color: yellow;
+  justify-content: center;
+}
+#blog hr {
+  height: 5px;
+  background-color: purple;
+}
+#portfolio hr {
+  height: 5px;
+  background-color: green;
+}
+#products hr {
+  height: 5px;
+  background-color: blue;
+}
+#home hr {
+  height: 5px;
+  background-color: red;
+}
+a {
+  color: #000;
+  font-size: large;
+  margin: 1rem;
+  text-decoration: none;
+}
+ul section li {
+  margin: 0 0 0.5rem;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 15rem;
+}
+.cardimg {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  align-items: flex-end;
+  position: relative;
+}
+
+.text {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+  padding-top: 1rem;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  background-image: url(https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/background_pattern.png);
+}
+.cardtext {
+  padding: 3rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h2 {
+  color: darkorange;
+  padding: 2rem;
+}
+.box {
+  margin: 1rem 0 0 5rem;
+  width: 250px;
+  height: 370px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+iframe,
+.card-img {
+  padding-left: 2rem;
+}
+p {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%px;
+  height: 250px;
+  padding: 2rem;
+  background-image: url(https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/background_pattern.png);
+}
+#downfoot {
+  display: flex;
+}
+.footer .boxfooter {
+  display: flex;
+  width: 300px;
+  padding: 2rem 0 0 0;
+  flex-direction: column;
+}
+.footer .boxfooter {
+  padding-top: 1rem;
+  margin: 1rem;
+}
+.footerbas {
+  display: flex;
+}
+.gauche {
+  padding: 2rem;
+  flex-direction: column;
+}
+.droite {
+  padding: 3rem;
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (max-width:1160px){
+  .nav{
+    display:flex;
+    flex-direction: column;
+    z-index: 1
+    ;
+
+  }
+}
